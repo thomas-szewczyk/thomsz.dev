@@ -1,0 +1,25 @@
+name: Import GitHub Issues from CSV
+on:
+  workflow_dispatch:  # Manuelles Starten der Action
+
+jobs:
+  import_issues:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install GitHub CLI
+        run: |
+          sudo apt update
+          sudo apt install gh -y
+
+      - name: Authenticate GitHub CLI
+        run: |
+          echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
+
+      - name: Read CSV and Create Issues
+        run: |
+          while IFS=, read -r title description labels; do
+            gh issue create --repo ${{ github.repository }} --title "$title" --body "$description" --label "$labels"
+          done < github_issues_domain_shell.csv
