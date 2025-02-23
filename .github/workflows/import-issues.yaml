@@ -18,8 +18,8 @@ jobs:
         run: |
           echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
           
-      - name: Read CSV and Create Issues
+      - name: Read CSV and Create Issues (Without Labels)
         run: |
-          tail -n +2 github_issues.csv | while IFS=, read -r title description
+          tail -n +2 github_issues.csv | while IFS=, read -r title description; do
             gh issue create --repo ${{ github.repository }} --title "$title" --body "$description"
           done
