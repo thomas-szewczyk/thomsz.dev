@@ -22,4 +22,4 @@ jobs:
         run: |
           while IFS=, read -r title description labels; do
             gh issue create --repo ${{ github.repository }} --title "$title" --body "$description" --label "$labels"
-          done < github_issues_domain_shell.csv
+          done < github_issues.csv
