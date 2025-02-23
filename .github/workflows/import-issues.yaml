@@ -20,6 +20,6 @@ jobs:
           
       - name: Read CSV and Create Issues
         run: |
-          tail -n +2 github_issues.csv | while IFS=, read -r title description labels; do
-            gh issue create --repo ${{ github.repository }} --title "$title" --body "$description" --label "$labels"
+          tail -n +2 github_issues.csv | while IFS=, read -r title description
+            gh issue create --repo ${{ github.repository }} --title "$title" --body "$description"
           done
