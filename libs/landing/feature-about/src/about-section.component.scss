@@ -1,0 +1,38 @@
+section.about-me {
+  margin-top: 3rem;
+}
+
+.about-me-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "image" "text";
+  gap: 1rem;
+
+  .about-me-text {
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: text;
+  }
+
+  .about-me-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: image;
+
+    img {
+      max-width: 15rem;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "text image";
+  }
+
+}
