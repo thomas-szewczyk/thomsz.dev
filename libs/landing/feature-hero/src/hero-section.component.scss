@@ -1,0 +1,48 @@
+.hero {
+  padding: 5rem 0;
+  background-color: var(--mat-sys-primary-container);
+}
+
+.hero-header h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-align: center;
+}
+
+.hero-header h2 {
+  font-size: 1.5rem;
+  color: var(--mat-sys-secondary);
+  text-align: center;
+  margin: 1rem 0 0 0;
+}
+
+.hero-header h3 {
+  font-size: 1rem;
+  color: var(--mat-sys-secondary);
+  text-align: center;
+  font-weight: normal;
+  margin-top: 0.5rem;
+}
+
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  max-width: 9rem;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1.5px solid;
+}
+
+.hero-actions {
+  margin-top: 2rem;
+  text-align: center;
+
+  button {
+    margin: 0 0.5rem;
+  }
+}
+
+
+
