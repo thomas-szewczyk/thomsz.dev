@@ -6,6 +6,7 @@ import { MatDivider } from '@angular/material/divider';
 import { LoadingOverlayComponent } from '@thomas-szewczyk-cv/ui';
 import { LandingStore } from '@thomas-szewczyk-cv/landing/data-access';
 import { LandingComponent } from '@thomas-szewczyk-cv/landing';
+import { LandingStore } from '@thomas-szewczyk-cv/landing/data-access';
 
 @Component({
   imports: [
