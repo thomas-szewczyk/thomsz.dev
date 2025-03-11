@@ -1,0 +1,14 @@
+<section class="skills">
+  <div class="container">
+    <div class="cards-container">
+
+      @for (category of $skills(); track category) {
+        <lib-skill-category [$skillCategory]="category"></lib-skill-category>
+      }
+
+    </div>
+    <div class="legend-container"></div>
+  </div>
+</section>
+
+

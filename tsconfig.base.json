@@ -21,6 +21,9 @@
       "@thomas-szewczyk-cv/landing/about": [
         "libs/landing/feature-about/src/index.ts"
       ],
+      "@thomas-szewczyk-cv/landing/skills": [
+        "libs/landing/feature-skills/src/index.ts"
+      ],
       "@thomas-szewczyk-cv/landing": [
         "libs/landing/feature-landing/src/index.ts"
       ],

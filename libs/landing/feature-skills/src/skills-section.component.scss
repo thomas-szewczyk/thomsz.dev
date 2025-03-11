@@ -1,0 +1,19 @@
+section.skills {
+  padding: 3rem 0;
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    /* Ab 600px: 2 Spalten */
+    @media screen and (min-width: 600px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    /* Ab 1440px: 4 Spalten */
+    @media screen and (min-width: 1440px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
