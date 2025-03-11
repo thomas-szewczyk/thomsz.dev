@@ -1,1 +1,95 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+// Breakpoint-Variablen
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+$breakpoint-xl: 1440px;
+
+/* Globale Stile */
+html {
+  box-sizing: border-box;
+  color-scheme: light;
+  font-size: 16px;
+  height: 100%;
+
+  @include mat.theme((
+    color: mat.$blue-palette,
+    typography: Roboto,
+    density: 0
+  ));
+}
+
+body {
+  background: var(--mat-sys-surface);
+  color: var(--mat-sys-on-surface);
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+a {
+  color: var(--mat-sys-primary);
+  text-decoration: none;
+}
+
+.border-solid-primary {
+  border-color: var(--mat-sys-primary-container);
+  border-style: solid;
+  border-width: 6px;
+}
+
+.color-primary {
+  color: var(--mat-sys-primary);
+}
+
+.color-secondary {
+  color: var(--mat-sys-secondary);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 1rem;
+
+  @media (max-width: $breakpoint-xl) {
+    max-width: 1140px;
+  }
+
+  @media (max-width: $breakpoint-lg) {
+    max-width: 960px;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    max-width: 720px;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    max-width: 100%;
+  }
+}
+
+.mat-divider {
+  border-top-color: var(--mat-sys-primary-container) !important;
+}
+
+.mat-mdc-card-outlined {
+  background: white !important;
+}
+
+.mat-mdc-chip-action-label {
+  align-items: center;
+  display: flex;
+}
+
+.panel-title {
+  color: var(--mat-sys-secondary) !important;
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}

@@ -1,0 +1,22 @@
+<header class="navbar">
+  <div class="container">
+    <mat-toolbar>
+      <div class="example-button-row">
+
+        @for (item of menutItems; track item.label) {
+          <button [ngClass]="item.styleClass" mat-button color="primary">
+            {{ item.label }}
+
+            @if (item.icon) {
+              <mat-icon>{{ item.icon }}</mat-icon>
+            }
+
+          </button>
+        }
+
+      </div>
+      <span class="spacer"></span>
+    </mat-toolbar>
+  </div>
+</header>
+<mat-divider></mat-divider>
