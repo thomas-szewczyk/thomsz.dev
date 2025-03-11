@@ -1,0 +1,47 @@
+@if ($cvEntry(); as cvEntry) {
+  <div class="cv-entry" [class.expanded]="$isExpanded()">
+      <div class="cv-entry-content" [ngClass]="{'cv-entry-content-with-image': cvEntry.imageUrl}">
+        <div class="cv-entry-info">
+          <div class="cv-entry-info-header">
+            <h2>{{ cvEntry.title }}</h2>
+            <h3>{{ cvEntry.company }}</h3>
+          </div>
+          <div class="cv-entry-info-subheader">
+            <div class="cv-entry-content-row">
+              <mat-icon>calendar_today</mat-icon>
+              <h3>{{ cvEntry.dateRange.from | date:'MMMM YYYY' }}
+                - {{ cvEntry.dateRange.to ? (cvEntry.dateRange.to | date:'MMMM YYYY') : 'aktuell' }}
+              </h3>
+            </div>
+            <div class="cv-entry-content-row">
+              <mat-icon>place</mat-icon><h3>{{ cvEntry.city }}</h3>
+            </div>
+          </div>
+
+          @if (cvEntry.responsibilities.length > 0) {
+            <div class="toggle-button">
+              <button color="secondary" mat-button (click)="onSelect(cvEntry.id)">Details</button>
+            </div>
+          }
+        </div>
+        <div class="cv-entry-description collapsible" [class.expanded]="$isExpanded()">
+          <mat-list class="task-list">
+            <h3 class="cv-responsibilities-subheader" matLine>{{ cvEntry.projectTitle }}</h3>
+            @for(responsibility of cvEntry.responsibilities; track responsibility.name) {
+              <mat-list-item>
+                <span matListItemIcon>{{ responsibility.icon }}</span>
+                <p matLine>{{ responsibility.name }}</p>
+              </mat-list-item>
+            }
+          </mat-list>
+        </div>
+        @if(cvEntry.imageUrl) {
+          <div class="collapsible" [class.expanded]="$isExpanded()">
+            <img class="cv-entry-image"
+                 src="{{ cvEntry.imageUrl }}"
+                 [alt]="cvEntry.projectTitle + ' Bild'">
+          </div>
+        }
+      </div>
+  </div>
+}

@@ -24,9 +24,16 @@
       "@thomas-szewczyk-cv/landing/skills": [
         "libs/landing/feature-skills/src/index.ts"
       ],
+      "@thomas-szewczyk-cv/landing/cv": [
+        "libs/landing/feature-cv/src/index.ts"
+      ],
       "@thomas-szewczyk-cv/landing": [
         "libs/landing/feature-landing/src/index.ts"
       ],
+      "@thomas-szewczyk-cv/landing/data-access": [
+        "libs/landing/data-access/src/index.ts"
+      ],
+      "@thomas-szewczyk-cv/core/api": ["libs/core/http-client/src/index.ts"],
       "@thomas-szewczyk-cv/core/tokens": ["libs/core/tokens/src/index.ts"],
       "@thomas-szewczyk-cv/ui": ["libs/ui/src/index.ts"]
     }

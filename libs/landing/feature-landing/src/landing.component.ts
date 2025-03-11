@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { AboutSectionComponent } from '@thomas-szewczyk-cv/landing/about';
 import { HeroSectionComponent } from '@thomas-szewczyk-cv/landing/hero';
 import { SkillsSectionComponent } from '@thomas-szewczyk-cv/landing/skills';
+import { CvSectionComponent } from '@thomas-szewczyk-cv/landing/cv';
 
 @Component({
   selector: 'lib-landing',
@@ -11,6 +12,7 @@ import { SkillsSectionComponent } from '@thomas-szewczyk-cv/landing/skills';
     AboutSectionComponent,
     HeroSectionComponent,
     SkillsSectionComponent,
+    CvSectionComponent,
   ],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.css',

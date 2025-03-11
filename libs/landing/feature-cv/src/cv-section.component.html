@@ -1,0 +1,66 @@
+<section class="cv">
+  <div class="container">
+    <mat-card appearance="outlined">
+      <mat-tab-group>
+
+        @if ($cvJobEntries().length > 0) {
+          <mat-tab label="Berufserfahrung">
+
+            @for (cvEntry of $cvJobEntries(); track cvEntry.id) {
+              <lib-cv-entry
+                [$cvEntry]="cvEntry"
+                [$isExpanded]="$selectedEntryId() === cvEntry.id"
+                (toggleDetailsEmitter)="toggleDetails($event)"
+              ></lib-cv-entry>
+
+              @if ($index !== $cvJobEntries().length - 1) {
+                <mat-divider></mat-divider>
+              }
+            }
+
+          </mat-tab>
+        }
+
+        @if ($cvEducationEntries().length > 0) {
+          <mat-tab label="Ausbildung">
+
+            @for (cvEntry of $cvEducationEntries(); track cvEntry.id) {
+              <lib-cv-entry
+                [$cvEntry]="cvEntry"
+                [$isExpanded]="$selectedEntryId() === cvEntry.id"
+                (toggleDetailsEmitter)="toggleDetails($event)"
+              ></lib-cv-entry>
+
+              @if ($index !== $cvEducationEntries().length - 1) {
+                <mat-divider></mat-divider>
+              }
+
+            }
+
+          </mat-tab>
+        }
+
+        @if ($certificates().length > 0) {
+          <mat-tab label="Weiterbildung">
+
+            @for (certificate of $certificates(); track certificate.id) {
+              <lib-certificate-entry
+                [$certificate]="certificate"
+              ></lib-certificate-entry>
+
+              @if ($index !== $certificates().length - 1) {
+                <mat-divider></mat-divider>
+              }
+
+            }
+          </mat-tab>
+        }
+
+      </mat-tab-group>
+      <mat-card-header>
+      </mat-card-header>
+      <mat-card-content>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</section>
