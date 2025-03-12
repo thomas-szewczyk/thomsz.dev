@@ -1,0 +1,17 @@
+@if($certificate(); as certificate) {
+  <div class="certificate-entry">
+    <div class="certificate-entry-image">
+      <img [src]="certificate.thumbnailUrl" alt="">
+    </div>
+    <div class="certificate-entry-content">
+      <h3>{{ certificate.title }}</h3>
+      <h4>{{ certificate.issuer }}</h4>
+      <h4 class="certificate-entry-date">
+        <mat-icon>calendar_today</mat-icon>
+        {{ certificate.issueDate | date: 'dd.MM.YYYY': 'de-DE' }}
+      </h4>
+    </div>
+  </div>
+}
+
+

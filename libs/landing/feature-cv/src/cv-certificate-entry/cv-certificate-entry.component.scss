@@ -1,0 +1,42 @@
+.certificate-entry {
+  display: flex;
+  padding: 2rem;
+  color: var(--mat-sys-secondary);
+
+  h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .mat-icon {
+    font-size: 0.9rem;
+    height: 0.9rem;
+    width: 0.9rem;
+    margin-right: 0.2rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+
+    &.certificate-entry-date {
+      font-size: 0.9rem;
+      margin-top: 0;
+      font-weight: 400;
+    }
+  }
+
+  .certificate-entry-content {
+    flex: 1;
+  }
+
+  .certificate-entry-image {
+    margin-right: 1rem;
+    img {
+      width: 100%;
+      max-width: 10rem;
+      height: auto;
+    }
+  }
+}

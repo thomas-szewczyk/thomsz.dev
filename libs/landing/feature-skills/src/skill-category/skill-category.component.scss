@@ -1,0 +1,40 @@
+.skill-category {
+
+  h2 {
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0.65re;
+  }
+}
+
+.chips-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  mat-chip {
+    &.skill-chip.expert {
+      background-color: rgba(255, 249, 139, 0.3);
+    }
+
+    &.skill-chip.intermediate {
+      background-color: #e9f2fd;
+    }
+
+    &.skill-chip.beginner {
+      background-color: #e8e8e8;
+    }
+  }
+
+  span:has(.chip-logo) {
+    cursor: default;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem 0 0;
+  }
+
+  .chip-logo {
+    margin-right: 8px;
+    object-fit: contain;
+  }
+}
