@@ -5,6 +5,7 @@ import { HeroSectionComponent } from '@thomas-szewczyk-cv/landing/hero';
 import { SkillsSectionComponent } from '@thomas-szewczyk-cv/landing/skills';
 import { CvSectionComponent } from '@thomas-szewczyk-cv/landing/cv';
 import { LandingStore } from '@thomas-szewczyk-cv/landing/data-access';
+import { ContactComponent } from '@thomas-szewczyk-cv/landing/contact';
 
 @Component({
   selector: 'lib-landing',
@@ -14,6 +15,7 @@ import { LandingStore } from '@thomas-szewczyk-cv/landing/data-access';
     HeroSectionComponent,
     SkillsSectionComponent,
     CvSectionComponent,
+    ContactComponent,
   ],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.css',
