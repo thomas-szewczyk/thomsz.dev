@@ -8,8 +8,8 @@
 
         @for (item of menuItems; track item.label) {
           <button
+            [libScrollTo]="item.link"
             [ngClass]="item.styleClass"
-            (click)="scrollTo(item.link)"
             mat-button color="primary"
           >
             {{ item.label }}

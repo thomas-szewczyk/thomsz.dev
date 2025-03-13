@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { MatButton } from '@angular/material/button';
+import { ScrollToDirective } from '@thomas-szewczyk-cv/shared';
 
 @Component({
   selector: 'lib-hero-section',
-  imports: [MatButton],
+  imports: [MatButton, ScrollToDirective],
   templateUrl: './hero-section.component.html',
   styleUrl: './hero-section.component.scss',
 })
