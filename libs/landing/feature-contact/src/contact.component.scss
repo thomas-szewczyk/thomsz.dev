@@ -1,50 +1,73 @@
-section.contact {
-  padding: 3rem 0;
-}
+@use '../../../../apps/thomas-szewczyk-cv/src/styles' as s;
 
-.contact-details {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  text-align: center;
-  padding: 1rem;
-}
+section {
+  &.contact {
+    padding: 3rem 0;
 
-.contact-photo img {
-  width: 100%;
-  max-width: 10rem;
-  border-radius: 50%;
-  border: 2px solid var(--mat-sys-secondary);
-}
+    .contact-details {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "text photo";
+      gap: 1rem;
+      text-align: center;
+      padding: 1rem;
 
-img.social-logo {
-  width: 1.5rem;
-}
+      @media (max-width: s.$breakpoint-sm) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "photo"
+          "text";
+      }
 
-.contact-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+      .contact-text {
+        grid-area: text;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-.social-links {
-  display: flex;
-  gap: 0.5rem;
-  list-style: none;
-  padding: 0;
-}
+        .social-links {
+          display: flex;
+          gap: 0.5rem;
+          list-style: none;
+          padding: 0;
 
-p.contact-row {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  text-align: center;
+          img {
+            &.social-logo {
+              width: 1.5rem;
+            }
+          }
 
-  a {
-    color: var(--mat-sys-secondary);
-    text-decoration: none;
-  };
+        }
+
+        p {
+          &.contact-row {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            text-align: center;
+
+            a {
+              color: var(--mat-sys-secondary);
+              text-decoration: none;
+            }
+          }
+        }
+
+      }
+
+      .contact-photo {
+        grid-area: photo;
+
+        img {
+          width: 100%;
+          max-width: 10rem;
+          border-radius: 50%;
+          border: 2px solid var(--mat-sys-secondary);
+        }
+      }
+    }
+  }
 }
