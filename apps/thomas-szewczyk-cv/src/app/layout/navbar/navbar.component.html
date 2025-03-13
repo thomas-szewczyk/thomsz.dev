@@ -1,4 +1,7 @@
-<header class="navbar">
+<header
+  class="navbar"
+  [ngClass]="{ 'scrolled': $isScrolled() }"
+>
   <div class="container">
     <mat-toolbar>
       <div class="example-button-row">

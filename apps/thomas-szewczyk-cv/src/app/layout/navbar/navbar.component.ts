@@ -1,4 +1,12 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import {
+  Component,
+  computed,
+  EventEmitter,
+  HostListener,
+  OnInit,
+  Output,
+  signal,
+} from '@angular/core';
 import { MatToolbar } from '@angular/material/toolbar';
 import { MatIcon } from '@angular/material/icon';
 import { MatButton } from '@angular/material/button';
@@ -13,7 +21,11 @@ import { MenuItem } from './data-access/models/menu-item.model';
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent implements OnInit {
+  $scrollY = signal(0);
+  $isScrolled = computed(() => this.$scrollY() > 0);
+
   menuItems: MenuItem[];
+
   @Output() scrollToSection: EventEmitter<string>;
 
   constructor() {
@@ -23,6 +35,11 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
     this.getMenuItemsConfig();
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll(): void {
+    this.$scrollY.set(window.scrollY);
   }
 
   getMenuItemsConfig() {
