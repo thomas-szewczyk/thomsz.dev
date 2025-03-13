@@ -13,10 +13,18 @@ import { MatButton } from '@angular/material/button';
 import { NgClass } from '@angular/common';
 import { MatDivider } from '@angular/material/divider';
 import { MenuItem } from './data-access/models/menu-item.model';
+import { ScrollToDirective } from '@thomas-szewczyk-cv/shared';
 
 @Component({
   selector: 'app-navbar',
-  imports: [MatToolbar, MatIcon, MatButton, NgClass, MatDivider],
+  imports: [
+    MatToolbar,
+    MatIcon,
+    MatButton,
+    NgClass,
+    MatDivider,
+    ScrollToDirective,
+  ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })
@@ -26,11 +34,8 @@ export class NavbarComponent implements OnInit {
 
   menuItems: MenuItem[];
 
-  @Output() scrollToSection: EventEmitter<string>;
-
   constructor() {
     this.menuItems = [];
-    this.scrollToSection = new EventEmitter<string>();
   }
 
   ngOnInit() {
@@ -66,9 +71,5 @@ export class NavbarComponent implements OnInit {
         link: 'contact',
       },
     ];
-  }
-
-  scrollTo(sectionId: string): void {
-    this.scrollToSection.emit(sectionId);
   }
 }
