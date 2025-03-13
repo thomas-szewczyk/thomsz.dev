@@ -1,4 +1,8 @@
-<app-navbar></app-navbar>
+@if ($isLoading()) {
+  <lib-loading-overlay></lib-loading-overlay>
+}
+
+<app-navbar (scrollToSection)="scrollToSection($event)"></app-navbar>
 <lib-landing></lib-landing>
 <mat-divider></mat-divider>
 <app-footer></app-footer>

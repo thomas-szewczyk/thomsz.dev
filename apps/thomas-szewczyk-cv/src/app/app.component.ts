@@ -24,4 +24,11 @@ export class AppComponent {
   title = 'thomas-szewczyk-cv';
   $store = inject(LandingStore);
   $isLoading = this.$store.isLoading;
+
+  scrollToSection(sectionId: string): void {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

@@ -4,13 +4,16 @@
       <div class="example-button-row">
 
         @for (item of menuItems; track item.label) {
-          <button [ngClass]="item.styleClass" mat-button color="primary">
+          <button
+            [ngClass]="item.styleClass"
+            (click)="scrollTo(item.link)"
+            mat-button color="primary"
+          >
             {{ item.label }}
 
             @if (item.icon) {
               <mat-icon>{{ item.icon }}</mat-icon>
             }
-
           </button>
         }
 

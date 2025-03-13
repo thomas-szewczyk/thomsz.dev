@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { MatToolbar } from '@angular/material/toolbar';
 import { MatIcon } from '@angular/material/icon';
 import { MatButton } from '@angular/material/button';
@@ -14,9 +14,11 @@ import { MenuItem } from './data-access/models/menu-item.model';
 })
 export class NavbarComponent implements OnInit {
   menuItems: MenuItem[];
+  @Output() scrollToSection: EventEmitter<string>;
 
   constructor() {
     this.menuItems = [];
+    this.scrollToSection = new EventEmitter<string>();
   }
 
   ngOnInit() {
@@ -47,5 +49,9 @@ export class NavbarComponent implements OnInit {
         link: 'contact',
       },
     ];
+  }
+
+  scrollTo(sectionId: string): void {
+    this.scrollToSection.emit(sectionId);
   }
 }
