@@ -1,0 +1,453 @@
+{
+  "cvEntries": [
+    {
+      "id": 8,
+      "title": "Fullstack-Entwickler",
+      "description": "",
+      "company": "Studienkreis GmbH",
+      "city": "Bochum",
+      "dateRange": {
+        "from": "2025-01-01"
+      },
+      "projectTitle": "",
+      "responsibilities": []
+    },
+    {
+      "id": 7,
+      "title": "Lead Consultant | Front Developer | SPACE",
+      "description": "",
+      "company": "CGI",
+      "city": "Bochum",
+      "dateRange": {
+        "from": "2022-08-01",
+        "to": "2016-12-31"
+      },
+      "projectTitle": "Projekte für Satellitensysteme",
+      "responsibilities": [
+        {
+          "icon": "🖥️",
+          "name": "Konzeption und Entwicklung von Benutzeroberflächen"
+        },
+        {
+          "icon": "🔗",
+          "name": "Erstellung und Pflege von REST-APIs (OpenAPI)"
+        },
+        {
+          "icon": "✅",
+          "name": "Code-Reviews und Integration neuer Funktionen"
+        },
+        {
+          "icon": "🤝",
+          "name": "Zusammenarbeit mit dem Backend-Team"
+        },
+        {
+          "icon": "🐞",
+          "name": "Debugging"
+        },
+        {
+          "icon": "📅",
+          "name": "Koordination des Frontend-Teams"
+        },
+        {
+          "icon": "📄",
+          "name": "Erstellung und Pflege von Anwenderdokumentationen"
+        },
+        {
+          "icon": "🧪",
+          "name": "Implementierung von Tests zur Qualitätssicherung"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Junior Web Developer",
+      "description": "",
+      "company": "energate GmbH",
+      "city": "Essen",
+      "dateRange": {
+        "from": "2022-03-01",
+        "to": "2022-07-30"
+      },
+      "projectTitle": "Firmenspezifische Webanwendungen",
+      "responsibilities": [
+        {
+          "icon": "🖥️",
+          "name": "Entwicklung und Konzeption von Webapplikationen"
+        },
+        {
+          "icon": "📋",
+          "name": "Aufnahme und Definition neuer Anforderungen"
+        },
+        {
+          "icon": "🏗️",
+          "name": "Planung von Webmodulen, Datenbanken und UI"
+        },
+        {
+          "icon": "🐞",
+          "name": "Debugging"
+        },
+        {
+          "icon": "📊",
+          "name": "Erstellung und Pflege von Datenmodellen & Modulen"
+        },
+        {
+          "icon": "🔗",
+          "name": "Integration in bestehende Systeme"
+        },
+        {
+          "icon": "🎧",
+          "name": "Nutzer-Support"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Werkstudent | Web Development",
+      "description": "",
+      "company": "energate GmbH",
+      "city": "Essen",
+      "dateRange": {
+        "from": "2021-02-01",
+        "to": "2022-02-28"
+      },
+      "projectTitle": "Firmenspezifische Webanwendungen",
+      "responsibilities": [
+        {
+          "icon": "🖥️",
+          "name": "Entwicklung und Konzeption von Webapplikationen"
+        },
+        {
+          "icon": "📋",
+          "name": "Aufnahme und Definition neuer Anforderungen"
+        },
+        {
+          "icon": "🏗️",
+          "name": "Planung von Webmodulen, Datenbanken und UI"
+        },
+        {
+          "icon": "🐞",
+          "name": "Debugging"
+        },
+        {
+          "icon": "📊",
+          "name": "Erstellung und Pflege von Datenmodellen & Modulen"
+        },
+        {
+          "icon": "🔗",
+          "name": "Integration in bestehende Systeme"
+        },
+        {
+          "icon": "🎧",
+          "name": "Nutzer-Support"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Basketballprofi",
+      "description": "",
+      "company": "FC Schalke 04 Basketball",
+      "city": "Gelsenkirchen",
+      "dateRange": {
+        "from": "2014-08-01",
+        "to": "2020-04-30"
+      },
+      "imageUrl": "/images/personal/bball.png",
+      "projectTitle": "Sportkarriere",
+      "responsibilities": [
+        {
+          "icon": "🏀",
+          "name": "2. Basketball-Bundesliga Pro A"
+        },
+        {
+          "icon": "🏀",
+          "name": "2. Basketball-Bundesliga Pro B"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Medieninformatik B.Sc",
+      "description": "",
+      "company": "Westfälische Hochschule",
+      "city": "Gelsenkirchen",
+      "dateRange": {
+        "from": "2014-09-01",
+        "to": "2022-03-01"
+      },
+      "isEducation": true,
+      "projectTitle": "Bachelorarbeit: Entwicklung einer digitalen Lernumgebung für die Chomsky-Normalform basierend auf Vue.js",
+      "responsibilities": [
+        {
+          "icon": "🖥️",
+          "name": "Konzeption und Entwicklung einer Webanwendung zu Chomsky-Normalformen"
+        },
+        {
+          "icon": "📋",
+          "name": "Anforderungsanalyse und -definition"
+        },
+        {
+          "icon": "🐞",
+          "name": "Debugging"
+        },
+        {
+          "icon": "📄",
+          "name": "Dokumentation"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Allgemeine Hochschulreife",
+      "description": "",
+      "company": "Albert-Schweitzer-Gymnasium",
+      "city": "Crailsheim",
+      "dateRange": {
+        "from": "2008-09-01",
+        "to": "2012-06-01"
+      },
+      "isEducation": true,
+      "projectTitle": "",
+      "responsibilities": []
+    },
+    {
+      "id": 1,
+      "title": "Gymnasium",
+      "description": "",
+      "company": "Gimnazjum Samorządowe Nr.2",
+      "city": "Bolesławiec",
+      "dateRange": {
+        "from": "2005-09-01",
+        "to": "2008-06-01"
+      },
+      "isEducation": true,
+      "projectTitle": "",
+      "responsibilities": []
+    }
+],
+  "skills": [
+    {
+      "title": "Tech-Stack",
+      "skills": [
+        {
+          "name": "Angular",
+          "level": 3,
+          "logo": "/images/technologies/angular.svg",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "TypeScript",
+          "level": 3,
+          "logo": "/images/technologies/typescript.svg",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "JavaScript",
+          "level": 3,
+          "logo": "/images/technologies/javascript.svg",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "Jest",
+          "level": 3,
+          "logo": "/images/technologies/jest.svg",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "RxJS",
+          "level": 3,
+          "logo": "/images/technologies/rxjs.svg",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "NgRx",
+          "level": 1,
+          "logo": "/images/technologies/ngrx.svg",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "Vue.js",
+          "level": 1,
+          "logo": "/images/technologies/vue.svg",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "Node.js",
+          "level": 2,
+          "logo": "/images/technologies/nodejs.svg",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "NestJS",
+          "level": 2,
+          "logo": "/images/technologies/nestjs.svg",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "Java",
+          "level": 1,
+          "logo": "/images/technologies/java.svg",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "PHP",
+          "level": 2,
+          "logo": "/images/technologies/php.svg",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "Symfony",
+          "level": 2,
+          "logo": "/images/technologies/symfony.svg",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "SQL",
+          "level": 2,
+          "logo": "/images/technologies/sql.svg",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "Git",
+          "level": 3,
+          "logo": "/images/technologies/git.svg",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "Nx",
+          "level": 2,
+          "logo": "/images/technologies/nx.svg",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "Docker",
+          "level": 1,
+          "logo": "/images/technologies/docker.svg",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "OpenAPI",
+          "level": 2,
+          "logo": "/images/technologies/openapi.svg",
+          "logoHeight": 16,
+          "logoWidth": 16
+        }
+      ]
+    },
+    {
+      "title": "Relevante Skills",
+      "skills": [
+        {
+          "name": "German",
+          "level": 3,
+          "logo": "/images/countries/de.svg",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "Polish",
+          "level": 3,
+          "logo": "/images/countries/pl.svg",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "English",
+          "level": 3,
+          "logo": "/images/countries/us.svg",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "Spanish",
+          "level": 2,
+          "logo": "/images/countries/es.svg",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "Agiles Arbeiten",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "Teamfähigkeit",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "Kommunikation",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "Selbständiges Arbeiten",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "Lernbereitschaft",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "Strukturiertes Arbeiten",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "Schnelle Auffassungabe",
+          "logoHeight": 16,
+          "logoWidth": 16
+        },
+        {
+          "name": "Problemlösung",
+          "logoHeight": 16,
+          "logoWidth": 16
+        }
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "id": 1,
+      "title": "NestJS Fundamentals",
+      "issuer": "NestJS",
+      "issueDate": "2024-12-05",
+      "imageUrl": "/images/certificates/nestjs.png",
+      "thumbnailUrl": "/images/certificates/nestjs_fundamentals.png"
+    },
+    {
+      "id": 2,
+      "title": "NestJS Authentication & Authorization",
+      "issuer": "NestJS",
+      "issueDate": "2024-12-20",
+      "imageUrl": "/images/certificates/nestjs.png",
+      "thumbnailUrl": "/images/certificates/nestjs_auth.png"
+    },
+    {
+      "id": 3,
+      "title": "Diploma de español nivel B1",
+      "issuer": "Instituto Cervantes",
+      "issueDate": "2025-02-03",
+      "imageUrl": "/images/certificates/dele-b1.png",
+      "thumbnailUrl": "/images/certificates/dele-b1.png"
+    }
+  ]
+}
