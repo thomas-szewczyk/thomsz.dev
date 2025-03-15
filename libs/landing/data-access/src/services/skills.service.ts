@@ -4,6 +4,7 @@ import { SkillCategory } from '../dtos/skill-category.dto';
 import { APP_CONFIG, AppConfig } from '@thomas-szewczyk-cv/core/tokens';
 import { map } from 'rxjs';
 import { Skill } from '../dtos/skill.dto';
+import { CvEntry } from '../dtos/cv-entry.dto';
 
 @Injectable({
   providedIn: 'root',
@@ -18,13 +19,17 @@ export class SkillsService {
   }
 
   load() {
-    return this.apiService.get<SkillCategory[]>(this.ENDPOINT).pipe(
-      map((skillCategories) =>
-        skillCategories.map((category) => {
-          category.skills = this.sortSkillsByLevel(category.skills);
-          return category;
-        })
-      )
+    return this.apiService.get<Record<string, SkillCategory[]>>().pipe(
+      map((data) => {
+        if (this.ENDPOINT in data) {
+          return data[this.ENDPOINT].map((category) => {
+            category.skills = this.sortSkillsByLevel(category.skills);
+            return category;
+          });
+        } else {
+          return [];
+        }
+      })
     );
   }
 

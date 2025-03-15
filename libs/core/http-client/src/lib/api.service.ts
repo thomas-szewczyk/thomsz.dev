@@ -20,8 +20,11 @@ export class ApiService {
     });
   }
 
-  get<T>(endpoint: string, params?: HttpParams): Observable<T> {
-    const fullUrl = `${this.config.apiUrl}/${endpoint}`;
+  get<T>(endpoint?: string, params?: HttpParams): Observable<T> {
+    let fullUrl = `${this.config.apiUrl}`;
+
+    if (endpoint) fullUrl = `${fullUrl}/${endpoint}`;
+
     return this.http.get<T>(fullUrl, {
       headers: this.httpHeaders,
       params,

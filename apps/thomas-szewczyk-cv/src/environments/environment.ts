@@ -1,9 +1,9 @@
 export const environment = {
-  production: true,
-  apiUrl: 'http://localhost:3000',
+  production: false,
+  apiUrl: '/dev/db/db.json',
   endpoints: {
     skills: 'skills',
-    cvEntries: 'cv-entries',
+    cvEntries: 'cvEntries',
     certificates: 'certificates',
   },
 };
