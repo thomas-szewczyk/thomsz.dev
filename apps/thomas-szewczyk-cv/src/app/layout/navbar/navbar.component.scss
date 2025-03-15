@@ -1,15 +1,9 @@
+@use '../../../styles.scss' as s;
+
 header.navbar,
 header.navbar mat-toolbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000000;
   background-color: var(--mat-sys-primary-container);
   color: var(--mat-sys-primary);
-
-  &.scrolled {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
 }
 
 .logo {
@@ -17,3 +11,37 @@ header.navbar mat-toolbar {
   font-weight: bold;
   margin-right: 1rem;
 }
+
+.mobile-toggle {
+  display: none;
+}
+.mobile-menu {
+  width: 100%;
+  display: none;
+  background-color: var(--mat-sys-primary-container);
+}
+
+@media (min-width: s.$breakpoint-sm) {
+  .desktop-menu {
+    display: flex;
+  }
+}
+
+@media (max-width: s.$breakpoint-sm) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: inline-flex;
+    margin-left: auto;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+}
+
