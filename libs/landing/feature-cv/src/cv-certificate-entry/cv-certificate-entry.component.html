@@ -8,7 +8,7 @@
       <h4>{{ certificate.issuer }}</h4>
       <h4 class="certificate-entry-date">
         <mat-icon>calendar_today</mat-icon>
-        {{ certificate.issueDate | date: 'dd.MM.YYYY': 'de-DE' }}
+        {{ certificate.issueDate | date:'MMMM YYYY' }}
       </h4>
     </div>
   </div>
