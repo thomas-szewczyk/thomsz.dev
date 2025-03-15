@@ -1,12 +1,10 @@
 @use '@angular/material' as mat;
 
-// Breakpoint-Variablen
 $breakpoint-sm: 768px;
 $breakpoint-md: 992px;
 $breakpoint-lg: 1200px;
 $breakpoint-xl: 1440px;
 
-/* Globale Stile */
 html {
   box-sizing: border-box;
   color-scheme: light;
@@ -18,6 +16,10 @@ html {
     typography: Roboto,
     density: 0
   ));
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: 14px;
+  }
 }
 
 body {

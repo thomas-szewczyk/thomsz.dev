@@ -1,19 +1,19 @@
 import {
   Component,
   computed,
-  EventEmitter,
   HostListener,
   OnInit,
-  Output,
   signal,
+  ViewChild,
 } from '@angular/core';
 import { MatToolbar } from '@angular/material/toolbar';
 import { MatIcon } from '@angular/material/icon';
-import { MatButton } from '@angular/material/button';
-import { NgClass } from '@angular/common';
+import { MatButton, MatIconButton } from '@angular/material/button';
+import { NgClass, SlicePipe } from '@angular/common';
 import { MatDivider } from '@angular/material/divider';
-import { MenuItem } from './data-access/models/menu-item.model';
+import { MenuItem } from './models/menu-item.model';
 import { ScrollToDirective } from '@thomas-szewczyk-cv/shared';
+import { MatMenu, MatMenuItem, MatMenuTrigger } from '@angular/material/menu';
 
 @Component({
   selector: 'app-navbar',
@@ -24,15 +24,23 @@ import { ScrollToDirective } from '@thomas-szewczyk-cv/shared';
     NgClass,
     MatDivider,
     ScrollToDirective,
+    MatMenu,
+    MatMenuTrigger,
+    SlicePipe,
+    MatMenuItem,
+    MatIconButton,
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent implements OnInit {
+  @ViewChild('menuTrigger') menuTrigger!: MatMenuTrigger;
+
+  private readonly SM_BREAKPOINT = 768;
+  menuItems: MenuItem[];
+
   $scrollY = signal(0);
   $isScrolled = computed(() => this.$scrollY() > 0);
-
-  menuItems: MenuItem[];
 
   constructor() {
     this.menuItems = [];
@@ -40,6 +48,13 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
     this.getMenuItemsConfig();
+  }
+
+  @HostListener('window:resize', [])
+  onWindowResize(): void {
+    if (this.menuTrigger && window.innerWidth >= this.SM_BREAKPOINT) {
+      this.menuTrigger.closeMenu();
+    }
   }
 
   @HostListener('window:scroll', [])
