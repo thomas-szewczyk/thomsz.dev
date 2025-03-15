@@ -9,7 +9,7 @@ import { ScrollToDirective } from '@thomas-szewczyk-cv/shared';
   styleUrl: './hero-section.component.scss',
 })
 export class HeroSectionComponent {
-  welcomeHeader = "Hi! 👋 I'm";
+  welcomeHeader = 'Hallo! 👋 Ich bin';
   name = 'Thomas Szewczyk';
   subHeader = 'Web Developer | Best Practices Enthusiast | Team Player';
 }
