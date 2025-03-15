@@ -1,0 +1,11 @@
+<ul class="social-links">
+
+  @for (socialLink of socialLinks; track socialLink.name) {
+    <li>
+      <a [href]="socialLink.url" target="_blank">
+        <img class="social-logo" src="{{socialLink.imageUrl}}" alt="{{socialLink.name}}"/>
+      </a>
+    </li>
+  }
+
+</ul>

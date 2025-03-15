@@ -26,20 +26,6 @@ section {
         justify-content: center;
         align-items: center;
 
-        .social-links {
-          display: flex;
-          gap: 0.5rem;
-          list-style: none;
-          padding: 0;
-
-          img {
-            &.social-logo {
-              width: 1.5rem;
-            }
-          }
-
-        }
-
         p {
           &.contact-row {
             margin: 0;

@@ -1,4 +1,7 @@
+@use '../../../../apps/thomas-szewczyk-cv/src/styles' as s;
+
 section.about-me {
+  position: relative;
   margin-top: 3rem;
 }
 
@@ -27,6 +30,11 @@ section.about-me {
       max-width: 15rem;
       width: 100%;
       height: auto;
+
+      @media screen and (min-width: s.$breakpoint-sm) {
+        position: absolute;
+        bottom: 0;
+      }
     }
   }
 
@@ -35,4 +43,7 @@ section.about-me {
       grid-template-areas: "text image";
   }
 
+  lib-social-logos {
+    align-self: flex-start;
+  }
 }

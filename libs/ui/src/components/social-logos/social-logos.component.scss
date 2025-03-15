@@ -1,0 +1,18 @@
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+
+  img {
+    &.social-logo {
+      width: 1.5rem;
+      opacity: 0.6;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
