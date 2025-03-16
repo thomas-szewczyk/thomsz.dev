@@ -19,7 +19,7 @@ export class SocialLogosComponent {
       name: 'wikipedia',
       alt: 'Wikipedia Artikel: Thomas Szewczyk',
       url: 'https://de.wikipedia.org/wiki/Thomas_Szewczyk',
-      imageUrl: '/images/social/wikipedia_w.svg',
+      imageUrl: '/images/social/wikipedia.png',
     },
     {
       name: 'github',
