@@ -1,4 +1,4 @@
-@use '../../../../apps/thomas-szewczyk-cv/src/styles' as s;
+@use '../../../../apps/thomas-szewczyk-cv/src/styles/breakpoints' as *;
 
 section {
   &.contact {
@@ -12,7 +12,7 @@ section {
       text-align: center;
       padding: 1rem;
 
-      @media (max-width: s.$breakpoint-sm) {
+      @media (max-width: $breakpoint-sm) {
         grid-template-columns: 1fr;
         grid-template-areas:
           "photo"
