@@ -1,9 +1,7 @@
 @use '@angular/material' as mat;
-
-$breakpoint-sm: 768px;
-$breakpoint-md: 992px;
-$breakpoint-lg: 1200px;
-$breakpoint-xl: 1440px;
+@use 'styles/fonts' as fonts;
+@use 'styles/breakpoints' as *;
+@use 'styles/material-icons' as material-icons;
 
 html {
   box-sizing: border-box;

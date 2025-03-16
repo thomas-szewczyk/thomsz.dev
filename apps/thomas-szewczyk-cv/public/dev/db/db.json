@@ -354,28 +354,28 @@
       "title": "Relevante Skills",
       "skills": [
         {
-          "name": "German",
+          "name": "Deutsch",
           "level": 3,
           "logo": "/images/countries/de.svg",
           "logoHeight": 16,
           "logoWidth": 16
         },
         {
-          "name": "Polish",
+          "name": "Polnisch",
           "level": 3,
           "logo": "/images/countries/pl.svg",
           "logoHeight": 16,
           "logoWidth": 16
         },
         {
-          "name": "English",
+          "name": "Englisch",
           "level": 3,
           "logo": "/images/countries/us.svg",
           "logoHeight": 16,
           "logoWidth": 16
         },
         {
-          "name": "Spanish",
+          "name": "Spanisch",
           "level": 2,
           "logo": "/images/countries/es.svg",
           "logoHeight": 16,
@@ -417,7 +417,7 @@
           "logoWidth": 16
         },
         {
-          "name": "Problemlösung",
+          "name": "Problemlöser",
           "logoHeight": 16,
           "logoWidth": 16
         }
