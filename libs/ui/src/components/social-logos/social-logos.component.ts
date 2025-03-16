@@ -12,7 +12,7 @@ export class SocialLogosComponent {
     {
       name: 'linkedin',
       alt: 'LinkedIn Profil: Thomas Szewczyk',
-      url: 'https://www.linkedin.com/in/thomas-szewczyk/',
+      url: 'https://www.linkedin.com/in/thomas-a-szewczyk/',
       imageUrl: '/images/social/InBug-Black.png',
     },
     {
