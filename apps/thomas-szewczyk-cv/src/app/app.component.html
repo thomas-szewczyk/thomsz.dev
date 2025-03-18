@@ -2,7 +2,47 @@
   <lib-loading-overlay></lib-loading-overlay>
 }
 
-<app-navbar></app-navbar>
-<lib-landing></lib-landing>
-<mat-divider></mat-divider>
-<app-footer></app-footer>
+<app-navbar
+  (closeSidenav)="onCloseSidenav()"
+  (toggleSidenav)="onToggleSidenav()"
+  [$menuItems]="menuItems"
+  [$sidenavOpened]="$sidenavOpened()"
+></app-navbar>
+<mat-sidenav-container>
+  <mat-sidenav
+    (closedStart)="onCloseSidenav()"
+    [fixedInViewport]="true"
+    [opened]="$sidenavOpened()"
+    mode="over"
+    position="start"
+  >
+    <mat-nav-list>
+      @for (item of menuItems; track item.label) {
+        @if (item.styleClass === 'logo') {
+          <button
+            mat-button
+            [libScrollTo]="item.link"
+            [class]="item.styleClass"
+            [textContent]="item.label"
+            (click)="onCloseSidenav()"
+          ></button>
+        } @else {
+          <a
+            [libScrollTo]="item.link"
+            [class]="item.styleClass"
+            (click)="onCloseSidenav()"
+            mat-list-item
+          >
+            {{ item.label }}
+          </a>
+        }
+      }
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <lib-landing></lib-landing>
+    <mat-divider></mat-divider>
+    <app-footer></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
