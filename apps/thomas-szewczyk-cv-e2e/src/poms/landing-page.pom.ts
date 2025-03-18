@@ -8,7 +8,7 @@ export class LandingPage {
   }
 
   async getHeader() {
-    return this.page.locator('header');
+    return this.page.locator('app-navbar');
   }
 
   async getFooter() {

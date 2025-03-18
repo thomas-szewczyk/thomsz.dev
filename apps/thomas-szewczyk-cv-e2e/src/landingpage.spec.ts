@@ -11,8 +11,8 @@ test.describe('Landing Page Layout Tests', () => {
 
   test.describe('Header Tests', () => {
     test('Header should be visible', async () => {
-      const footer = await landingPage.getHeader();
-      await expect(footer).toBeVisible();
+      const header = await landingPage.getHeader();
+      await expect(header).toBeVisible();
     });
   });
 

@@ -16,6 +16,12 @@ export class SocialLogosComponent {
       imageUrl: '/images/social/InBug-Black.png',
     },
     {
+      name: 'xing',
+      alt: 'Xing Profil: Thomas Szewczyk',
+      url: 'https://www.xing.com/profile/Thomas_Szewczyk3',
+      imageUrl: '/images/social/xing.svg',
+    },
+    {
       name: 'wikipedia',
       alt: 'Wikipedia Artikel: Thomas Szewczyk',
       url: 'https://de.wikipedia.org/wiki/Thomas_Szewczyk',
