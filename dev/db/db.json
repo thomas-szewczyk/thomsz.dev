@@ -427,19 +427,19 @@
   "certificates": [
     {
       "id": 1,
-      "title": "NestJS Fundamentals",
-      "issuer": "NestJS",
-      "issueDate": "2024-12-05",
-      "imageUrl": "/images/certificates/nestjs.png",
-      "thumbnailUrl": "/images/certificates/nestjs_fundamentals.png"
-    },
-    {
-      "id": 2,
       "title": "NestJS Authentication & Authorization",
       "issuer": "NestJS",
       "issueDate": "2024-12-20",
       "imageUrl": "/images/certificates/nestjs.png",
       "thumbnailUrl": "/images/certificates/nestjs_auth.png"
+    },
+    {
+      "id": 2,
+      "title": "NestJS Fundamentals",
+      "issuer": "NestJS",
+      "issueDate": "2024-05-12",
+      "imageUrl": "/images/certificates/nestjs.png",
+      "thumbnailUrl": "/images/certificates/nestjs_fundamentals.png"
     },
     {
       "id": 3,
