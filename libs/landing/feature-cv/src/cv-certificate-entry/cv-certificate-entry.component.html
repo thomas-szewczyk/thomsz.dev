@@ -1,6 +1,6 @@
 @if($certificate(); as certificate) {
   <div class="certificate-entry">
-    <div class="certificate-entry-image">
+    <div class="certificate-entry-image" (click)="openImage(certificate.thumbnailUrl)">
       <img [src]="certificate.thumbnailUrl" alt="">
     </div>
     <div class="certificate-entry-content">
