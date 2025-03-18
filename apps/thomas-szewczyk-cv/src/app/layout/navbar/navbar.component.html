@@ -1,38 +1,23 @@
 <header
-  [ngClass]="{ 'scrolled': $isScrolled() }"
+  [class]="{ 'scrolled': $isScrolled(), 'hidden': $sidenavOpened() }"
   class="navbar"
 >
   <div class="container">
     <mat-toolbar>
       <button
-        #menuTrigger="matMenuTrigger"
-        [matMenuTriggerFor]="menu"
+        (click)="onToggleSidenav()"
         aria-label="Menü umschalten"
-        mat-icon-button
         class="mobile-toggle"
+        mat-icon-button
       >
         <mat-icon>menu</mat-icon>
       </button>
-      <div class="mobile-menu">
-        <mat-menu #menu="matMenu">
-          @for (item of menuItems | slice: 1; track item.label) {
-            <button
-              [libScrollTo]="item.link"
-              [ngClass]="item.styleClass"
-              mat-menu-item
-            >
-              {{ item.label }}
-            </button>
-          }
-        </mat-menu>
-
-      </div>
 
       <div class="desktop-menu">
-        @for (item of menuItems; track item.label) {
+        @for (item of $menuItems(); track item.label) {
           <button
             [libScrollTo]="item.link"
-            [ngClass]="item.styleClass"
+            [class]="item.styleClass"
             mat-button color="primary"
           >
             {{ item.label }}

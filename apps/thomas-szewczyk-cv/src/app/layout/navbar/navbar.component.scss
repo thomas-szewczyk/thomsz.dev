@@ -1,7 +1,18 @@
 @use '../../../styles/breakpoints' as s;
 
+header {
+  &.hidden {
+    display: none;
+  }
+}
+
 header.navbar,
 header.navbar mat-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
   background-color: var(--mat-sys-primary-container);
   color: var(--mat-sys-primary);
 }
@@ -15,6 +26,7 @@ header.navbar mat-toolbar {
 .mobile-toggle {
   display: none;
 }
+
 .mobile-menu {
   width: 100%;
   display: none;
@@ -35,13 +47,6 @@ header.navbar mat-toolbar {
   .mobile-toggle {
     display: inline-flex;
     margin-left: auto;
-  }
-
-  .mobile-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 1rem;
   }
 }
 
