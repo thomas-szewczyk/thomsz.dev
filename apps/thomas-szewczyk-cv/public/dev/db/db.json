@@ -347,6 +347,13 @@
           "logo": "/images/technologies/openapi.svg",
           "logoHeight": 16,
           "logoWidth": 16
+        },
+        {
+          "name": "GraphQL",
+          "level": 1,
+          "logo": "/images/technologies/graphql.svg",
+          "logoHeight": 16,
+          "logoWidth": 16
         }
       ]
     },
@@ -427,22 +434,30 @@
   "certificates": [
     {
       "id": 1,
-      "title": "NestJS Authentication & Authorization",
+      "title": "NestJS GraphQL code-first appoach",
       "issuer": "NestJS",
-      "issueDate": "2024-12-20",
-      "imageUrl": "/images/certificates/nestjs.png",
-      "thumbnailUrl": "/images/certificates/nestjs_auth.png"
+      "issueDate": "2025-03-22",
+      "imageUrl": "/images/certificates/nestjs_graphql.png",
+      "thumbnailUrl": "/images/certificates/nestjs_graphql.png"
     },
     {
       "id": 2,
-      "title": "NestJS Fundamentals",
+      "title": "NestJS Authentication & Authorization",
       "issuer": "NestJS",
-      "issueDate": "2024-05-12",
-      "imageUrl": "/images/certificates/nestjs.png",
-      "thumbnailUrl": "/images/certificates/nestjs_fundamentals.png"
+      "issueDate": "2024-12-20",
+      "imageUrl": "/images/certificates/nestjs_auth.png",
+      "thumbnailUrl": "/images/certificates/nestjs_auth.png"
     },
     {
       "id": 3,
+      "title": "NestJS Fundamentals",
+      "issuer": "NestJS",
+      "issueDate": "2024-05-12",
+      "imageUrl": "/images/certificates/nestjs_fundamentals.png",
+      "thumbnailUrl": "/images/certificates/nestjs_fundamentals.png"
+    },
+    {
+      "id": 4,
       "title": "Diploma de español nivel B1",
       "issuer": "Instituto Cervantes",
       "issueDate": "2025-02-03",
