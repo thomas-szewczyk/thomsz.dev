@@ -3,7 +3,10 @@ import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { MatDivider } from '@angular/material/divider';
-import { LoadingOverlayComponent } from '@thomas-szewczyk-cv/ui';
+import {
+  LoadingOverlayComponent,
+  SocialLogosComponent,
+} from '@thomas-szewczyk-cv/ui';
 import { LandingComponent } from '@thomas-szewczyk-cv/landing';
 import { LandingStore } from '@thomas-szewczyk-cv/landing/data-access';
 import { MenuItem } from './layout/data-access/models/menu-item.model';
@@ -31,6 +34,7 @@ import { MatButton } from '@angular/material/button';
     MatSidenavContent,
     ScrollToDirective,
     MatButton,
+    SocialLogosComponent,
   ],
   selector: 'app-root',
   templateUrl: './app.component.html',
